@@ -1,0 +1,51 @@
+.foot{
+    margin-top: 6%;
+.foot_text{
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        padding-top: 3%;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        line-height: 40px;
+    }
+    i{
+        font-size: 25px;
+        letter-spacing: 10px;
+        margin-bottom: 3%;
+    }
+    .fa-instagram, .fa-x-twitter, .fa-pinterest-p, .fa-facebook{
+        &:hover,&:focus, &:active {
+            transform: scale(1.2);
+            color:  rgb(255, 157, 0) !important;
+          }
+    }
+}
+.privacy{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 18%;
+    width: 100%;
+    h2{
+     color: white;
+     padding-top: 3%;
+    }
+    hr{
+        color: white;
+        width: 95%;
+        height: 2px;
+        opacity: 1;
+    }
+    p{
+        color: white;
+        line-height: 40px;
+    }
+}
+}
+
+@media(max-width:992px){
+    .privacy{
+        margin-left: 0 !important;
+    }
+}

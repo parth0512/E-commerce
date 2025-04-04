@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/main.css" />
+    <title>Etherea</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><p class="logo_text">Etherea</p></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#N1">NEW ARRIVALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S1">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#C1">CATEGORIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Hi">GIFTING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#O1">OUR STORES</a>
+              </li>
+            </ul>
+            <div class="nav-icons">
+              <div class="icon-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+              </div>
+               <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="cartTab">
+        <h3 class="list">Item List</h3>
+        <div class="listCart">
+        </div>
+        <div class="btn">
+          
+          <button class="close">CLOSE</button>
+          <button class="checkout">Check Out</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="background px-0 py-0">
+        <div>
+          <div class="responsive carabody">
+            <div>
+              <a href="#"><img src="/img/carousel/caro-1.jpg" alt="img" /></a>
+
+              <!-- <button class="shop-now">Shop Now</button> -->
+            </div>
+            <div>
+              <a href="#"> <img src="/img/carousel/caro-2.jpg" alt="img" /></a>
+              <!-- <button type="button" class="btn btn-danger SHOP-NOW">SHOP NOW</button> -->
+            </div>
+            <div>
+              <a href="#"> <img src="/img/carousel/caro-3.jpg" alt="img" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="container-fluid">
+          <div class="para-quote">
+            <p class="quote">
+              "Crafted for those who embrace luxury,
+              <br />
+              A perfume that speaks before you do,
+              <br />
+              And stays long after you leave."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="N1">
+        <div class="container-fluid">
+          <h3 class="new_arrival">NEW ARRIVALS</h3>
+          <div class="row responsive_card">
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-1.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Velvet Aura</h5>
+                <p>₹ 2999</p>
+                <button class="add_cart" onclick="addToCart('Perfume A', 49.99)">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-2.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Mystic Bloom</h5>
+                <p>₹ 200</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-3.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Amber Whisper</h5>
+                <p>₹ 199</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-4.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Celestial Noir</h5>
+                <p>₹ 99</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-5.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Ethereal Essence</h5>
+                <p>₹ 5999</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="card">
+                <img src="/img/perfume/p-6.png" alt="perfume1" />
+              </div>
+              <div class="card-body">
+                <h5>Obsidian Mist</h5>
+                <p>₹ 899</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="S1">
+        <div class="container-fluid">
+          <div class="row best_seller">
+            <div class="col-lg-4 col-12">
+              <p class="best_text">Best Seller</p>
+              <a href="#"><img src="/img/best sellers/b-1.jpg" alt="" /> </a>
+            </div>
+            <div class="col-lg-4 col-12">
+              <p class="best_text">Our Recommended</p>
+              <a href="#"> <img src="/img/best sellers/b-2.jpg" alt="" /> </a>
+            </div>
+            <div class="col-lg-4 col-12">
+              <p class="best_text">Best Oud</p>
+              <a href="#"> <img src="/img/best sellers/b-3.jpg" alt="" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <secction>
+      <div class="container" id="C1">
+        <div class="container-fluid">
+          <h3 class="categories">Cetegories</h3>
+          <div class="row responsive_categories">
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-1.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Floral Bouquet</h5>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-2.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Woody & Oud</h5>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-3.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Oriental & Spicy</h5>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-4.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Citrus & Fresh</h5>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-5.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Gourmand & Sweet</h5>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="categories-card">
+                <img src="/img/categories/c-6.png" alt="category" />
+              </div>
+              <div class="categories-body">
+                <h5>Leather & Smoky</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+    <section>
+      <div class="container">
+        <div class="container-fluid" id="Hi">
+          <h3 class="gifting">Gift Boxes</h3>
+          <div class="row responsive_gift">
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-1.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>Whispers Elegance</h5>
+                <p>₹ 999</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-2.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>Timeless Essence</h5>
+                <p>₹ 3999</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-3.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>A Symphony Scents</h5>
+                <p>₹ 87</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-4.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>Mystical Aroma</h5>
+                <p>₹ 549</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-5.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>The Essence Beauty</h5>
+                <p>₹ 699</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6">
+              <div class="gift">
+                <img src="/img/giftbox/g-6.jpg" alt="giftbox" />
+              </div>
+              <div class="gift-body">
+                <h5>Fragrance Affair</h5>
+                <p>₹ 7999</p>
+                <button class="add_cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="O1">
+        <div class="container-fluid">
+          <h3 class="our_stores">Our Stores</h3>
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="shop">
+                <div class="shop-body">
+                  <h2>Etherea - Exclusive Stores</h2>
+                  <hr />
+                  <p>
+                    High Street Manoj nagar,
+                    <br />
+                    No 3WB,First Floor, Tajmahal Road,
+                    <br />
+                    Kamala Nagar.
+                    <br />
+                    Agara - 223007
+                    <br />
+                    +91 8893485380
+                    <br />
+                    Opens at 10:00 AM Close at 9:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="shop">
+                <div class="shop-body">
+                  <h2>Etherea - Exclusive Stores</h2>
+                  <hr />
+                  <p>
+                    Lower Parel sharojni nagar,
+                    <br />
+                    No 5FB, Ground Floor, Raja Road,
+                    <br />
+                    Chandani Nagar.
+                    <br />
+                    Delhi - 223777
+                    <br />
+                    +91 8893457530
+                    <br />
+                    Opens at 10:00 AM Close at 9:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="shop">
+                <div class="shop-body">
+                  <h2>Etherea - Exclusive Stores</h2>
+                  <hr />
+                  <p>
+                    High Street Kamini nagar,
+                    <br />
+                    No 3B, Ground Floor, Kailash Road,
+                    <br />
+                    Jamani Nagar.
+                    <br />
+                    Mumbai - 313007
+                    <br />
+                    +91 9890485380
+                    <br />
+                    Opens at 10:00 AM Close at 9:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid foot" style="background-color: black">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="foot_text">
+                <h2>CONTACT US</h2>
+                <p>
+                  Etherea Perfume (Where Scents Become Timeless. Experience the
+                  art of fragrance, crafted to inspire elegance and allure)
+                </p>
+                <p>Follow us for the latest in luxury perfumery.</p>
+                <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+                <i class="fa-brands fa-pinterest-p" style="color: #ffffff"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+                <p>© 2025 Etherea. All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="privacy">
+                <h2>Privacy Policy | Terms of Service</h2>
+                <p>
+                  By using our website, you agree to our Privacy Policy and
+                  Terms of Service.
+                </p>
+                <hr />
+                <p>
+                  All our fragrances are crafted with premium, ethically sourced
+                  ingredients.
+                </p>
+
+                <p>Committed to Sustainable & Cruelty-Free Perfumery.</p>
+                <p>FAQs | Shipping & Returns | Track Your Order</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="cart-overlay"></div>
+<div class="login-overlay"></div>
+<div class="login-tab">
+  <div class="login-header">
+    <h3>Login</h3>
+    <button class="close-login">&times;</button>
+  </div>
+  <form class="login-form">
+    <div class="form-group">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" required>
+    </div>
+    <div class="form-group">
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required>
+    </div>
+    <button type="submit" class="login-submit">Sign In</button>
+    <div class="login-footer">
+      <a href="#" class="forgot-password">Forgot password?</a>
+      <a href="#" class="create-account">Create account</a>
+    </div>
+  </form>
+</div>
+    <script
+      src="https://kit.fontawesome.com/138cf0e6ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/newArraival.js"></script>
+    <script src="/js/gifting.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/profile.js"></script>
+  </body>
+</html>

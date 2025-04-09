@@ -1,0 +1,36 @@
+@import 'nav';
+@import 'carousel';
+@import 'quote';
+@import 'newArrival';
+@import 'bestSeller';
+@import 'categories';
+@import 'gifting';
+@import 'shops';
+@import 'footer';
+@import 'cartTab';
+html, body {
+  overflow-x: hidden;
+  scroll-padding-top: 160px;
+  scroll-behavior: smooth;
+
+}
+.body-lock {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  
+  &.active {
+      display: block;
+  }
+}
